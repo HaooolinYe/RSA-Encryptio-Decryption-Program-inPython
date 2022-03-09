@@ -19,7 +19,7 @@ A <em>Python program</em> that is able to do <em>RSA encryption</em> and <em>dec
       <ol>
         <li><a href="#ascci">Self-made ASCCI table</a></li>
         <li><a href="#sqrt">Find Prime through √</a></li>
-      <li>Euclidean Algorithm</li>
+        <li> <a href="#euclidean">Euclidean Algorithm</a></li>
       <li> Inverse in Modulo </li>
     </ol>
   </li>
@@ -225,6 +225,57 @@ A quick improvement to this algorithm is to check numbers from 2 to sqrt(n). Now
   <br>
   From this, we get a time complexity worst case O(√n). This is kinda rare in computer science, and also slower than O(logn). For sure we can do other tests. for example, using <a href="https://en.wikipedia.org/wiki/Fermat%27s_little_theorem"><em>Fermat's Little Theorem</em></a> and that would be super fast, O(1) on average. However, the downside of it is that it never guarantees that the number is truly a prime, even you do the tests several times with different numbers. It can only tell you that the number is more likely to be a prime, yet, we never know unless we do soemthing else to verify it. But do notice when Fermat's little Theorem tells you a number isn't a prime, that is guaranteed! Good to prevent the user from entering a composite maybe, keke.
 
+ ```
+  def ifprime(n):
+    '''
+        ifprime(n) takes an positive integer and returns
+        ture if it is a prime and false if it is not
+    '''
+    result = True
+    for x in range(2,int(n**(1/2))+1):
+        if not n%x:
+            result = False
+            break
+    return result 
+ ```
+  
  <p align="right"><a href="#gd">↑Top</a></p>
+</p>
+</p>
+
+---------------------------------------------------------------------------
+<h3 id="euclidean"> Euclidean Algorithm </h3>
+<p>
+  <i>The Euclidean algorithm is a way to find the greatest common divisor of two positive integers, a and b.</i>
+  <br>
+  I am not going to spend too much time in explaining the details of how and why this works. This algorithm is pretty elementry for anyone who took discrete mathematics or basic computer science, and yet, somewhat hard for me,a beginner too, to expain it. What I am going to do is to walk you through an example, and show you the code and the magic;)
+  <br>
+  </p>
+  <pre>
+a <- 1701
+b <- 3768
+do:
+ 1701  = 0(3768) + 1701 
+ 3768  = 2(1701) + 366 
+ 1701  = 4(366) + 237 
+ 366  = 1(237) + 129 
+ 237  = 1(129) + 108 
+ 129  = 1(108) + 21 
+ 108  = 5(21) + 3 
+ 21  = 7(3) + 0 
+Back Track
+ 3 = 1(108) + -5(21)
+ 3 = 1(108) + -5(129-1(108)) =-5(129) + 6(108)
+ 3 = -5(129) + 6(237-1(129)) =6(237) + -11(129)
+ 3 = 6(237) + -11(366-1(237)) =-11(366) + 17(237)
+ 3 = -11(366) + 17(1701-4(366)) =17(1701) + -79(366)
+ 3 = 17(1701) + -79(3768-2(1701)) =-79(3768) + 175(1701)
+ 3 = -79(3768) + 175(17010(3768)) =175(1701) + -79(3768)
+ result <- "3=175(1701) + -79(3768)"
+ print(result)
+ DONE
+ </pre>
+<p> I hope you get a good sense of how this algorithm works. Again, if you are not familiar with this, you shouldn't try to understand what RSA is and why we are using this algorithm. If you are confortable with this, just got stuck on how this can be implemented in a modern computer language, I got you <em>this prorgam</em> and hopefully this can help you out!.
+  <p align="right"><a href="#gd">↑Top</a></p>
 </p>
 </p>
