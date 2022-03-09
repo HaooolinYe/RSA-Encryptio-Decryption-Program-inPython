@@ -32,8 +32,6 @@ def euclidean(a,b):
         t = s1-t1*q
         return (d,s,t)
 
-# As my professor reminds me that a recursive function won't be efficient enough
-# especially when p and q are large primes. Therefore, I uses the following function, xgcd(a,b),
 # coded by Robert Campbell from the website: https://github.com/Robert-Campbell-256/Number-Theory-Python/blob/master/numbthy.py
 
 def xgcd(a,b):
