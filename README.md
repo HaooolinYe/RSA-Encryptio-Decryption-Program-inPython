@@ -90,10 +90,10 @@ Bob sometimes tells Alice little <em>secretes</em>, and he obviously <strong>doe
   As <i>"Bob"</i>, you would need to decide what <i><strong>k</strong></i> and <i><strong>m</strong></i> are.
   <br>
   <dl>
-    <dt>k</<dt>
+    <dt>k:</<dt>
     <dd> A public key, needs to be <strong>a prime number!</strong> Usually, the bigger the k is , the safer your encryption would be.</dd>
-        <dt>m</<dt>
+        <dt>m:</<dt>
     <dd> A product of two prime number. Again, the bigger, the better</dd>
     </dl>
-  Don't worry if 
+  Don't worry if you are afraid the numbers you entered are not prime. We have an <em>auto-checker</em> that checks whether the number is prime or not. This checker uses <em>the square-root prime check method</em>.
 </p>
