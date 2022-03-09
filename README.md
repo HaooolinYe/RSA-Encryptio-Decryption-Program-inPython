@@ -96,4 +96,7 @@ Bob sometimes tells Alice little <em>secretes</em>, and he obviously <strong>doe
     <dd> A product of two prime number. Again, the bigger, the better</dd>
     </dl>
   Don't worry if you are afraid the numbers you entered are not prime. We have an <em>auto-checker</em> that checks whether the number is prime or not. This checker uses <em>the square-root prime check method</em>.
+  <br>
+  Then, just enter the message you wish to be encrypted, and the program will output it for you:).
+<img src="https://user-images.githubusercontent.com/90864900/157479490-99a29e23-b3e8-4fcd-8732-e39f9fbbd807.png">
 </p>
