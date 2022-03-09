@@ -15,7 +15,7 @@ A <em>Python program</em> that is able to do <em>RSA encryption</em> and <em>dec
       <li><a href="#alice">Decryption</a></li>
     </ol>
   </li>
-  <li><strong>Handy Maths Concepts</strong>
+  <li><strong><a href="#math">Handy Maths Concepts</a></strong>
       <ol>
       <li>Self-made ASCCI table</li>
       <li>Find Prime through √</li>
@@ -131,4 +131,84 @@ Bob sometimes tells Alice little <em>secretes</em>, and he obviously <strong>doe
  <p align="right"><a href="#gd">↑Top</a></p>
 </p>
 
-<h2> Maths <img src="https://user-images.githubusercontent.com/90864900/157484212-364147ac-cc05-494d-8587-2b84ab3a16f5.png" height=20 width=20> </h2>
+<h2 id="math"> Maths <img src="https://user-images.githubusercontent.com/90864900/157484212-364147ac-cc05-494d-8587-2b84ab3a16f5.png" height=20 width=20> </h2>
+<p>Let's list some of the handy maths strategies we used in this program</p>
+
+<h3>Self-made ASCCI table</h3>
+<p> To encrypt the English message to integers, we have an ASCCI Table which has the 26 alphet Capital letters and punctuation marks with their corresponding numbers.
+  <table align="center" cellpadding="15" width="100%">
+    <tr>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+<th>E</th>
+<th>F</th>
+<th>G</th>
+<th>H</th>
+<th>I</th>
+<th>J</th>
+<th>K</th>
+<th>L</th>
+<th>M</th>
+<th>N</th>
+<th>O</th>
+<th>P</th>
+<th>Q</th>
+<th>R</th>
+<th>S</th>
+<th>T</th>
+<th>U</th>
+<th>V</th>
+<th>W</th>
+<th>X</th>
+<th>Y</th>
+<th>Z</th>
+<th> </th>
+<th>!</th>
+<th>,</th>
+<th>.</th>
+<th>:</th>
+<th>;</th>
+<th>'</th>
+<th>"</th>
+<th>?</th>
+    </tr>
+    <tr>
+<th>12</th>
+<th>13</th>
+<th>14</th>
+<th>15</th>
+<th>16</th>
+<th>17</th>
+<th>18</th>
+<th>19</th>
+<th>20</th>
+<th>21</th>
+<th>22</th>
+<th>23</th>
+<th>24</th>
+<th>25</th>
+<th>26</th>
+<th>27</th>
+<th>28</th>
+      <th>29</th>
+<th>30</th>
+<th>31</th>
+<th>32</th>
+<th>33</th>
+<th>34</th>
+<th>35</th>
+<th>36</th>
+<th>37</th>
+<th>38</th>
+<th>39</th>
+<th>40</th>
+<th>41</th>
+<th>42</th>
+<th>43</th>
+<th>44</th>
+<th>45</th>
+<th>46</th>
+    </tr>
+</table>
