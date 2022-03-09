@@ -12,7 +12,7 @@ A <em>Python program</em> that is able to do <em>RSA encryption</em> and <em>dec
     <strong>Menu</strong></a>
     <ol>
       <li><a href="#bob">Encryption</a></li>
-      <li>Decryption</li>
+      <li><a href="#alice">Decryption</a></li>
     </ol>
   </li>
   <li><strong>Handy Maths Concepts</strong>
@@ -84,7 +84,9 @@ A <em>Python program</em> that is able to do <em>RSA encryption</em> and <em>dec
 In this chapter, I am going to explain to you the two main functions of this program. Before that, let me introduce you two best friends: <em>Alice👧</em> and <em>Bob👦</em>.
 <br>
 Bob sometimes tells Alice little <em>secretes</em>, and he obviously <strong>doesn't want</strong> anyone else to know what those secrets are. Therefore, Bob invented an encoding method. He would first encrypted the secret, which is in English and may contain some puncutation marks, into <em>a list of inegers</em> and send it and some <strong>private and public keys</strong> to Alice. The keys are going to help Alice to decrypt that integer list back to human readable languages. <i>(Notice, even if other people know what the public key is, he/she won't be able to decrypt the message. If that person has all the keys, the decryption still cannot be done without the knowledge of RSA.)</i>
+<p align="right"><a href="#gd">↑Top</a></p>
 
+---------------------------------------------------------------------------
 <h3 id="bob"> Bob 👦</h3>
 <p>
   As <i>"Bob"</i>, you would need to decide what <i><strong>k</strong></i> and <i><strong>m</strong></i> are.
@@ -98,5 +100,31 @@ Bob sometimes tells Alice little <em>secretes</em>, and he obviously <strong>doe
   Don't worry if you are afraid the numbers you entered are not prime. We have an <em>auto-checker</em> that checks whether the number is prime or not. This checker uses <em>the square-root prime check method</em>.
   <br>
   Then, just enter the message you wish to be encrypted, and the program will output it for you:).
-<img src="https://user-images.githubusercontent.com/90864900/157479490-99a29e23-b3e8-4fcd-8732-e39f9fbbd807.png">
+<img src="https://user-images.githubusercontent.com/90864900/157482435-510f1676-3795-4aeb-96f9-d5bbbedafd2f.png">
+<p align="right"><a href="#gd">↑Top</a></p>
+</p>
+
+---------------------------------------------------------------------------
+
+<h3 id="alice"> Alice 👧</h3>
+<p>
+  As <i>"Bob"</i>, you would use the keys that <em>Bob 👦</em>sent to you to decrypt the integer message.
+  <br>
+  The keys are:
+    <dl>
+    <dt>k:</<dt>
+      <dd> A public key. It needs to be a <em>Prime</em></dd>
+    <dt>p:</<dt>
+      <dd>m is a product of <em>two prime numbers</em>, and p is one of the prime.</dd>
+    <dt>q:</<dt>
+    <dd>p*q = m.</dd>
+    <dt>integer message:</<dt>
+    <dd>This is the decrypted message that Bob 👦 sent to you. It has type string, but separated by a blank space. Therefore, we can treat it as a list.</dd>
+    </dl>
+ <i>Again, we have a prime checker to verify if the numbers you entered are prime if it's necessary for them to be;)</i>
+ <br>
+ Then, after giving the prorgam all of these, you can just wait for the program to output you the decrypted message!
+ <img src="https://user-images.githubusercontent.com/90864900/157482671-225cb890-33ee-42fd-9bcb-10ebfb370316.png">
+ <i>Notice, the output message are all in capital letters, while the origional message are not. This can be easily fixed later on when we talk about out own <strong><em>ASCCI table</em></strong> :)</i>
+ <p align="right"><a href="#gd">↑Top</a></p>
 </p>
