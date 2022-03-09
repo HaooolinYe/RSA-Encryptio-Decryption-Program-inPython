@@ -276,7 +276,7 @@ Back Track
  print(result)
  DONE
  </pre>
-<p> I hope you get a good sense of how this algorithm works. Again, if you are not familiar with this, you shouldn't try to understand what RSA is and why we are using this algorithm. If you are confortable with this, just got stuck on how this can be implemented in a modern computer language, I got you <em>this prorgam</em> and hopefully this can help you out!.
+<p> I hope you get a good sense of how this algorithm works. Again, if you are not familiar with this, you shouldn't try to understand what RSA is and why we are using this algorithm. If you are confortable with this, just got stuck on how this can be implemented in a modern computer language, I got you <em><a href="https://github.com/HaooolinYe/RSA-Encryptio-Decryption-Program-inPython/blob/main/Ex2%20Euclidean%20algorithm.py">this prorgam</a></em> and hopefully this can help you out!.
   <p align="right"><a href="#gd">↑Top</a></p>
 </p>
 </p>
