@@ -20,7 +20,7 @@ A <em>Python program</em> that is able to do <em>RSA encryption</em> and <em>dec
         <li><a href="#ascci">Self-made ASCCI table</a></li>
         <li><a href="#sqrt">Find Prime through √</a></li>
         <li> <a href="#euclidean">Euclidean Algorithm</a></li>
-      <li> Inverse in Modulo </li>
+      <!--<li> Inverse in Modulo </li>-->
     </ol>
   </li>
 </ul>
@@ -132,7 +132,8 @@ Bob sometimes tells Alice little <em>secretes</em>, and he obviously <strong>doe
 </p>
 
 <h2 id="math"> Maths <img src="https://user-images.githubusercontent.com/90864900/157484212-364147ac-cc05-494d-8587-2b84ab3a16f5.png" height=20 width=20> </h2>
-<p>Let's list some of the handy maths strategies we used in this program</p>
+<p>If you are not familiar with how RSA works. Continuing reading <em>is not recommanded!!!</em> The following chunks are the implementations of those methematical theorems and algorithms in the modern computer programming languages, <em>not for a teaching purpose</em>.
+  <br> If you survive from the warning above,let's list some of the handy maths strategies we used in this program:D</p>
 
 ---------------------------------------------------------------------------
 <h3 id="ascci">Self-made ASCCI table</h3>
