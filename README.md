@@ -11,7 +11,7 @@ A <em>Python program</em> that is able to do <em>RSA encryption</em> and <em>dec
   <li><a href="#menu">
     <strong>Menu</strong></a>
     <ol>
-      <li>Encryption</li>
+      <li><a href="#bob">Encryption</a></li>
       <li>Decryption</li>
     </ol>
   </li>
@@ -85,7 +85,15 @@ In this chapter, I am going to explain to you the two main functions of this pro
 <br>
 Bob sometimes tells Alice little <em>secretes</em>, and he obviously <strong>doesn't want</strong> anyone else to know what those secrets are. Therefore, Bob invented an encoding method. He would first encrypted the secret, which is in English and may contain some puncutation marks, into <em>a list of inegers</em> and send it and some <strong>private and public keys</strong> to Alice. The keys are going to help Alice to decrypt that integer list back to human readable languages. <i>(Notice, even if other people know what the public key is, he/she won't be able to decrypt the message. If that person has all the keys, the decryption still cannot be done without the knowledge of RSA.)</i>
 
-<h3> Bob 👦</h3>
+<h3 id="bob"> Bob 👦</h3>
 <p>
-  To be 
+  As <i>"Bob"</i>, you would need to decide what <i><strong>k</strong></i> and <i><strong>m</strong></i> are.
+  <br>
+  <dl>
+    <dt>k</<dt>
+    <dd> A public key, needs to be <strong>a prime number!</strong> Usually, the bigger the k is , the safer your encryption would be.</dd>
+        <dt>m</<dt>
+    <dd> A product of two prime number. Again, the bigger, the better</dd>
+    </dl>
+  Don't worry if 
 </p>
