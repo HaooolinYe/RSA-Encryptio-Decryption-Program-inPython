@@ -18,7 +18,7 @@ A <em>Python program</em> that is able to do <em>RSA encryption</em> and <em>dec
   <li><strong><a href="#math">Handy Maths Concepts</a></strong>
       <ol>
         <li><a href="#ascci">Self-made ASCCI table</a></li>
-      <li>Find Prime through √</li>
+        <li><a href="#sqrt">Find Prime through √</a></li>
       <li>Euclidean Algorithm</li>
       <li> Inverse in Modulo </li>
     </ol>
@@ -213,5 +213,18 @@ Bob sometimes tells Alice little <em>secretes</em>, and he obviously <strong>doe
 <th>46</th>
     </tr>
 </table>
+This table can be very flexible. That is, you can add any alphbets or symbols you'd like to encrypt to this table, and the program will deal with the maths for you;)
  <p align="right"><a href="#gd">↑Top</a></p>
+</p>
+
+---------------------------------------------------------------------------
+<h3 id="sqrt"> Find Prime through √ </h3>
+<p>The function would be straight forward once you understand the math behind it. Basically, the naive way to determine whether an integer is prime or not is to loop through all numbers between 1 and n-1 to see whether the division between it and n gives you a <em>0 reminder</em>. Though we can do mod pretty fast in a modern programming language, this is still <strong>pretty slow</strong> since the time complexity is O(n) as we have <em>n-2 numbers to check</em>.
+<br>
+A quick improvement to this algorithm is to check numbers from 2 to sqrt(n). Now, to understand the reason behind this, think of the largest possible divisor of an integer, say 16. The greatest divisor of it should be 8, but this would be notified when we check if 2 is a divsor of 16, so there is no need to go all the way to 8 after we have checked 2. For number that does not have a small divisor, say 77, the largest divisor is only +4 then its smallest divisor. Therefore we conclude that, if there exist a large first divisor, then the bigger it gets, the closer it gets to the last divisor. Eventually, the first and the last would equal, and since the product of them has to be the number we are looking at, such divisor would be the <strong>square root</strong> of it.
+  <br>
+  From this, we get a time complexity worst case O(√n). This is kinda rare in computer science, and also slower than O(logn). For sure we can do other tests. for example, using <a href="https://en.wikipedia.org/wiki/Fermat%27s_little_theorem"><em>Fermat's Little Theorem</em></a> and that would be super fast, O(1) on average. However, the downside of it is that it never guarantees that the number is truly a prime, even you do the tests several times with different numbers. It can only tell you that the number is more likely to be a prime, yet, we never know unless we do soemthing else to verify it. But do notice when Fermat's little Theorem tells you a number isn't a prime, that is guaranteed! Good to prevent the user from entering a composite maybe, keke.
+
+ <p align="right"><a href="#gd">↑Top</a></p>
+</p>
 </p>
