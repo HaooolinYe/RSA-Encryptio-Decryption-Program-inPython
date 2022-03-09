@@ -17,7 +17,7 @@ A <em>Python program</em> that is able to do <em>RSA encryption</em> and <em>dec
   </li>
   <li><strong><a href="#math">Handy Maths Concepts</a></strong>
       <ol>
-      <li>Self-made ASCCI table</li>
+        <li><a href="#ascci">Self-made ASCCI table</a></li>
       <li>Find Prime through √</li>
       <li>Euclidean Algorithm</li>
       <li> Inverse in Modulo </li>
@@ -127,14 +127,15 @@ Bob sometimes tells Alice little <em>secretes</em>, and he obviously <strong>doe
  <br>
  Then, after giving the prorgam all of these, you can just wait for the program to output you the decrypted message!
  <img src="https://user-images.githubusercontent.com/90864900/157482671-225cb890-33ee-42fd-9bcb-10ebfb370316.png">
- <i>Notice, the output message are all in capital letters, while the origional message are not. This can be easily fixed later on when we talk about out own <strong><em>ASCCI table</em></strong> :)</i>
+ <i>Notice, the output message are all in capital letters, while the origional message are not. This can be easily fixed later on when we talk about out own <a href="#ascci"<strong><em>ASCCI table</em></strong></a> :)</i>
  <p align="right"><a href="#gd">↑Top</a></p>
 </p>
 
 <h2 id="math"> Maths <img src="https://user-images.githubusercontent.com/90864900/157484212-364147ac-cc05-494d-8587-2b84ab3a16f5.png" height=20 width=20> </h2>
 <p>Let's list some of the handy maths strategies we used in this program</p>
 
-<h3>Self-made ASCCI table</h3>
+---------------------------------------------------------------------------
+<h3 id="ascci">Self-made ASCCI table</h3>
 <p> To encrypt the English message to integers, we have an ASCCI Table which has the 26 alphet Capital letters and punctuation marks with their corresponding numbers.
   <table align="center" cellpadding="15" width="100%">
     <tr>
@@ -212,3 +213,5 @@ Bob sometimes tells Alice little <em>secretes</em>, and he obviously <strong>doe
 <th>46</th>
     </tr>
 </table>
+ <p align="right"><a href="#gd">↑Top</a></p>
+</p>
